@@ -90,6 +90,7 @@ CREATE TABLE ObjetivoAluno(
 	IdObjetivoAluno INT PRIMARY KEY IDENTITY NOT NULL,
 	Categoria BINARY,
 	DataEntrega DATETIME,
+	Nota INT,
 
 	--FK
 	IdAlunoTurma INT FOREIGN KEY REFERENCES AlunoTurma (IdAlunoTurma)
