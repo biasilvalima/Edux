@@ -4,11 +4,11 @@
 INSERT INTO TipoUsuario (Tipo) VALUES
 	('Professor'),
 	('Aluno');
+	SELECT * FROM TipoUsuario
 
 INSERT INTO Instituicao 
 (Nome, Logradouro, Numero, Complemento) VALUES
 ('Escola Luziana', 'Rua Flores', 777, '');
-
 
 INSERT INTO Usuario 
 (Nome, Email, Senha, Idade, Sexo, IdTipoUsuario, IdInstituicao) VALUES
@@ -18,13 +18,12 @@ SELECT * FROM Usuario;
 
 INSERT INTO Categoria (Categoria) VALUES
 ('Oculto');
-SELECT * FROM Categoria;
 
---INSERT INTO Post (Texto, Imagem, IdUsuario) VALUES
---('Era uma vez...',  * FROM OPENROWSET (BULK'‪C:\Users\fernanda1234\Desktop\orkut.png') IMAGEM, 3);
+INSERT INTO Post (Texto, IdUsuario) VALUES
+('Era uma vez...', 3);
 
---INSERT INTO Dicas (Texto, Imagem, IdUsuario) VALUES
---(A borboleta..., SELECT * FROM OPENROWSER (...) IMAGEM, 2);
+INSERT INTO Dicas (Texto, IdUsuario) VALUES
+('A borboleta...', 2);
 
 INSERT INTO ProfTurma (Formacao, IdUsuario) VALUES
 ('DEV', '2');
@@ -44,8 +43,8 @@ INSERT INTO Curso (Curso, TotalHoras, IdTurma) VALUES
 ('DEV', 2000, 3);
 SELECT * FROM Curso;
 
-INSERT INTO ObjetivoAluno(Categoria, DataEntrega, IdAlunoTurma) VALUES
-(1, 2020-08-26, 1);
+INSERT INTO ObjetivoAluno(Categoria, DataEntrega, IdAlunoTurma, Nota) VALUES
+(1, 2020-08-26, 1, 100);
 SELECT * FROM ObjetivoAluno;
 
 INSERT INTO Objetivo (DataInicial, Descricao, IdObjetivoAluno, IdCategoria) VALUES
