@@ -44,8 +44,8 @@ INSERT INTO Curso (Curso, TotalHoras, IdTurma) VALUES
 ('DEV', 2000, 3);
 SELECT * FROM Curso;
 
-INSERT INTO ObjetivoAluno(Categoria, DataEntrega, IdAlunoTurma, Nota) VALUES
-(1, 2020-08-26, 1, 100);
+INSERT INTO ObjetivoAluno(Categoria, DataEntrega, IdAlunoTurma) VALUES
+(1, 2020-08-26, 1);
 SELECT * FROM ObjetivoAluno;
 
 INSERT INTO Objetivo (DataInicial, Descricao, IdObjetivoAluno, IdCategoria) VALUES
